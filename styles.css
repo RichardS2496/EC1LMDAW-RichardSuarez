@@ -149,12 +149,20 @@ header {
 }
 
 .products-section {
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 4rem 0;
+
+  text-align: center;
+}
+
+.products-section > h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--title-color);
 }
 
 .products-section-content {
-  max-width: 1240px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -164,14 +172,20 @@ header {
 .tarjeta {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   flex: 1 1 calc(25% - 1.25rem);
   max-width: calc(25% - 1.25rem);
   min-width: 200px;
+  padding: 1rem;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .tarjeta > img {
@@ -182,7 +196,8 @@ header {
 
 .product-description {
   text-align: start;
-  padding: 1rem;
+  margin-top: 10px;
+  /* padding: 1rem; */
 }
 
 .product-description > h2 {
@@ -193,4 +208,193 @@ header {
   justify-self: end;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.destacado-section {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.destacado-content {
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(
+    to right,
+    var(--blue-brilliant) 8%,
+    var(--title-color) 50%,
+    var(--title-color) 100%
+  );
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.text-destacado-container {
+  width: 60%;
+  color: var(--standard-bg);
+  font-size: 2rem;
+  line-height: 1.75rem;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.text-destacado-container span {
+  font-size: 1.25rem;
+}
+
+.text-destacado-container a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--standard-bg);
+  transition: all ease-in-out 0.3s;
+}
+
+.text-destacado-container a:hover {
+  color: var(--enfasis-app-color);
+}
+
+.img-destacado-container {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  order: 1;
+}
+
+.destacado-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-section {
+  margin: 0 auto;
+  padding: 4rem 0;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.about-section div {
+  width: 50%;
+}
+
+.gallumbo-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-section .gallumbo-description h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+.about-section div h2 span {
+  font-weight: 500;
+}
+
+.about-section div img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.contact-section {
+  background-color: var(--title-color);
+}
+
+.contact-section-container {
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.contact-info {
+  width: 60%;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: var(--standard-bg);
+}
+
+.contact-info p {
+  font-size: 1rem;
+}
+
+.form-container {
+  width: 40%;
+  background-color: var(--standard-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  font-size: 0.85rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact-info span {
+  font-weight: 500;
+}
+
+footer {
+  background-color: var(--title-color);
+  color: var(--standard-bg);
+
+  font-size: 0.85rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: var(--standard-bg) 1px solid;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form div input,
+select,
+textarea {
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family);
+}
+
+form button {
+  font-family: var(--font-family);
+  padding: 0.5rem;
+  background-color: var(--enfasis-app-color);
+  border-radius: 8px;
+  color: var(--standard-bg);
+  border: none;
+  font-weight: 700;
+  width: fit-content;
+  transition: all ease-in-out 0.3s;
+}
+
+form button:hover {
+  cursor: pointer;
+  scale: 1.05;
 }

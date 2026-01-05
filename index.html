@@ -24,7 +24,7 @@
           <ul class="header-links-container">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
-            <li><a href="#coleccion">Colección</a></li>
+            <!-- <li><a href="#coleccion">Colección</a></li> -->
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
           </ul>
@@ -51,7 +51,7 @@
       </section>
     </header>
     <main>
-      <section class="main-hero">
+      <section class="main-hero" id="inicio">
         <div class="hero-content">
           <div class="discount-advice">
             <span class="disc-badge">-50% DESCUENTO</span>
@@ -63,8 +63,41 @@
 
         <!-- <img class="main-hero-img" src="./images/main_hero.png" alt="" /> -->
       </section>
-      <section class="products-section">
+      <section class="products-section" id="productos">
+        <h2>COLECCIÓN GALLUMBOS CIRUELO 2026</h2>
         <div class="products-section-content">
+          <article class="tarjeta">
+            <img src="./images/product01.png" alt="pack de boxers" />
+            <div class="product-description">
+              <h2>Pack de 6 bóxers</h2>
+              <p>Algodón 100%</p>
+              <p class="price">24,99 €</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="./images/product01.png" alt="pack de boxers" />
+            <div class="product-description">
+              <h2>Pack de 6 bóxers</h2>
+              <p>Algodón 100%</p>
+              <p class="price">24,99 €</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="./images/product01.png" alt="pack de boxers" />
+            <div class="product-description">
+              <h2>Pack de 6 bóxers</h2>
+              <p>Algodón 100%</p>
+              <p class="price">24,99 €</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="./images/product01.png" alt="pack de boxers" />
+            <div class="product-description">
+              <h2>Pack de 6 bóxers</h2>
+              <p>Algodón 100%</p>
+              <p class="price">24,99 €</p>
+            </div>
+          </article>
           <article class="tarjeta">
             <img src="./images/product01.png" alt="pack de boxers" />
             <div class="product-description">
@@ -75,7 +108,102 @@
           </article>
         </div>
       </section>
+      <section class="destacado-section">
+        <div class="destacado-content">
+          <div class="text-destacado-container">
+            <h3>
+              PRODUCTOS HECHOS EN ESPAÑA <br />
+              <span>CON TALENTO ESPAÑOL</span>
+            </h3>
+            <a href="#productos">CONOCE NUESTROS PRODUCTOS →</a>
+          </div>
+          <div class="img-destacado-container">
+            <img class="destacado-img" src="./images/espgallumbos.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about-section" id="sobre-nosotros">
+        <div><img src="./images/fachada.png" alt="" /></div>
+        <div class="gallumbo-description">
+          <h2>
+            Gallumbos Ciruelo: <span>calidad y confort que se siente</span>
+          </h2>
+          <p>
+            En Gallumbos Ciruelo somos una <strong>marca española de ropa interior masculina</strong> enfocada en el hombre que valora la comodidad, el diseño y la calidad en su día a día. Nuestros productos están dirigidos a un público moderno y exigente, que busca prendas duraderas, funcionales y con una estética cuidada. 
+          <p>
+            Nos diferenciamos por la atención al detalle en cada etapa del proceso, el uso de materiales de alta calidad y un <strong>diseño pensado para ofrecer ajuste, soporte y confort superior, sin sacrificar estilo ni personalidad</strong>.
+          </p>
+          </p>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-section-container">
+          <div class="contact-info">
+            <h2>¿Tienes dudas? <br><span>Contáctanos</span></h2>
+            <p>Nuestro equipo te responderá en la brevedad posible.</p></div>
+          <div class="form-container">
+              <form action="#" method="post" class="contact-form">
+    
+                <div class="form-group">
+                  <label for="name">Nombre completo</label>
+                  <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Tu nombre completo"
+                  required
+                >
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Correo electrónico</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="tucorreo@email.com"
+                    required
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="consulta">Tipo de consulta</label>
+                  <select id="consulta" name="consulta" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="distribucion">Distribución</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="personalizada">Consulta personalizada</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    rows="5"
+                    placeholder="Escribe tu mensaje aquí..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  Enviar consulta
+                </button>
+
+              </form>
+          </div>
+        </div>
+
+      </section>
     </main>
-    <footer></footer>
+ 
+    <footer>
+      <section>      
+        <p>2026 Gallumbos Ciruelo © Todos los derechos reservados</p>
+      </section>
+    </footer>
   </body>
 </html>
